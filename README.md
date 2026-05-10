@@ -1,24 +1,25 @@
-# AAB Bin Signer
-A tool for signing Android App Bundles (AAB) and generating BIN files using bundlesigner.
-Currently supports macOS, Windows support coming soon.
+# AAB to BIN Signer
 
-## Features
+A guide and scripts for converting and signing Android App Bundles (.aab) into .bin files using bundlesigner.
 
-- Sign Android App Bundles (.aab)
-- Generate .bin files using bundlesigner
-- macOS GUI workflow
-- Secure password storage with Keychain
-- Automatic output file naming
-- Finder integration
-- Windows support coming soon
+This repository provides instructions for:
 
-## Requirements
-
-- Java
-- bundlesigner.jar
 - macOS
+- Windows
 
-## Security
+## Platforms
 
-This tool does not store passwords inside the script.
-Credentials are securely stored in the macOS Keychain.
+### macOS
+Instructions and script:
+macos/README.md
+
+### Windows
+Instructions and script:
+windows/README.md
+
+## What this repository teaches
+
+- How AAB signing works
+- How to use bundlesigner
+- How to generate BIN files
+- How to automate the process on macOS and Windows
