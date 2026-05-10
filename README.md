@@ -1,4 +1,5 @@
-# AAB to BIN Signer
+# CafeBazaar AAB to Bin Helper
+
 
 Unlike Google Play App Signing, [CafeBazaar](https://cafebazaar.ir) does not store developers' signing keys on its servers.
 Instead, CafeBazaar provides an open‑source tool called [bundle-signer](https://github.com/cafebazaar/bundle-signer) that allows developers to perform the signing process locally and generate a `.bin` file required for app publishing.
