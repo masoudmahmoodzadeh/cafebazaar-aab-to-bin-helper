@@ -170,9 +170,9 @@ The script automates the entire signing process:
 1. Prompts you to select the AAB file.
 2. Prompts you to select the keystore file.
 3. Requests the following information:
-   Keystore Alias
-   Keystore Password
-   Alias Password
+   - Keystore Alias
+   - Keystore Password
+   - Alias Password
 4. Passwords are stored securely in macOS Keychain.
 5. The script runs the bundlesigner command in the background.
 6. The .bin output is generated automatically.
@@ -180,3 +180,67 @@ The script automates the entire signing process:
 8. The final .bin file remains in the output location.
    
 After completion, you can reveal the result in Finder.
+
+# Usage
+
+
+1. Open Script Editor on macOS.
+2. Create a new script.
+3. Paste the AppleScript code.
+4. Click Run.
+
+
+ # Security
+This script does not store passwords in the code.
+
+Instead it uses macOS Keychain:
+
+* Passwords are securely encrypted
+* They are stored only for the current user
+* They are never saved in the repository
+If a password becomes invalid, the script automatically removes it from Keychain and asks for a new one.
+
+# Troubleshooting
+
+### Java not found
+
+Run:
+
+If the command is not found, install Java from:
+
+https://www.java.com
+
+---
+
+### bundlesigner fails
+
+Make sure:
+
+- The `bundlesigner` file exists
+- The path to `bundlesigner` is correct
+- The keystore file is valid
+- The keystore credentials are correct
+
+---
+
+### Wrong password
+
+If the stored password becomes invalid:
+
+- Open **Keychain Access**
+- Search for the saved entry related to the script
+- Delete it
+
+The script will ask for the credentials again on the next run.
+
+---
+
+### Permission issues
+
+If macOS blocks the script:
+
+1. Open **System Settings**
+2. Go to **Privacy & Security**
+3. Allow **Script Editor** to run the script if prompted
+`
+
