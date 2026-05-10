@@ -10,19 +10,9 @@ This repository provides instructions for:
 - [macOS](./macOS/README.md)
 - Windows
 
-## Platforms
-
-### macOS
-Instructions and script:
-macos/README.md
-
-### Windows
-Instructions and script:
-windows/README.md
-
 ## What this repository teaches
 
-- How AAB signing works
-- How to use bundlesigner
-- How to generate BIN files
+- How `aab` signing works
+- How to use `bundle-signer`
+- How to generate `bin` files
 - How to automate the process on macOS and Windows
