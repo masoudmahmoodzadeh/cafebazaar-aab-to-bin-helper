@@ -36,6 +36,14 @@ If PowerShell asks to install the NuGet provider or trust the repository, choose
 After installing the module, you can run the script normally.
 
 
+## Run the script
+
+1. Create a new file with the `.ps1` extension (for example: `windows-aab-to-bin.ps1`).
+2. Copy the script code into this file and save it.
+3. Right‑click the file.
+4. Click **Run with PowerShell**.
+
+
 ## Script
 
 ```powershell
