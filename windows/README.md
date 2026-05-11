@@ -2,8 +2,6 @@
 
 This guide explains how to generate a `.bin` file from an Android App Bundle (`.aab`) using CafeBazaar's `bundlesigner`.
 
-The script simplifies the process by guiding you through file selection, securely storing credentials in **macOS Keychain**, running the signing command, and producing the final `.bin` file automatically.
-
 ## Requirements
 
 - Java installed
