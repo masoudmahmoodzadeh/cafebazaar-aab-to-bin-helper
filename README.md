@@ -1,19 +1,19 @@
-# CafeBazaar AAB to Bin Helper
-
+# CafeBazaar AAB to BIN Helper
 
 Unlike Google Play App Signing, [CafeBazaar](https://cafebazaar.ir) does not store developers' signing keys on its servers.
-Instead, CafeBazaar provides an open‑source tool called [bundle-signer](https://github.com/cafebazaar/bundle-signer) that allows developers to perform the signing process locally and generate a `.bin` file required for app publishing.
 
-This repository provides a simple tool that automates signing an `.aab` file and generating the required `.bin` file using the `bundlesigner` tool.
+Instead, CafeBazaar provides an open-source tool called [bundle-signer](https://github.com/cafebazaar/bundle-signer), which allows developers to locally sign their Android App Bundles (`.aab`) and generate the `.bin` file required for publishing applications.
 
-This repository provides instructions for:
+This repository provides simple scripts and step-by-step instructions to automate the process of generating `.bin` files from `.aab` files on different operating systems.
 
-- [macOS](./macOS/README.md)
-- [Windows](./windows/README.md)
+## Supported Platforms
 
-## What this repository teaches
+* [macOS](./macOS/README.md)
+* [Windows](./windows/README.md)
 
-- How `aab` signing works
-- How to use `bundle-signer`
-- How to generate `bin` files
-- How to automate the process on macOS and Windows
+## What You Will Learn
+
+* How Android App Bundle (`.aab`) signing works in CafeBazaar
+* How to use `bundle-signer`
+* How to generate `.bin` files
+* How to automate the signing process on macOS and Windows
