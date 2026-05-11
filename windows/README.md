@@ -23,7 +23,20 @@ Allow local scripts for the current user
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-# Script
+## Install CredentialManager Module
+
+This script uses the Windows Credential Manager to securely store and retrieve keystore passwords.  
+Before running the script, install the required PowerShell module:
+```powershell
+Install-Module CredentialManager -Scope CurrentUser
+```
+
+If PowerShell asks to install the NuGet provider or trust the repository, choose Yes.
+
+After installing the module, you can run the script normally.
+
+
+## Script
 
 ```powershell
 Add-Type -AssemblyName System.Windows.Forms
@@ -105,7 +118,7 @@ function SaveCredential($target,$alias,$ksPass,$keyPass) {
 # ==============================
 
 Write-Host ""
-Title "Cafe Bazaar AAB → BIN Signer"
+Title "CafeBazaar aab to bin Signer"
 Write-Host ""
 
 # Select AAB
