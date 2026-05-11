@@ -17,7 +17,7 @@ Before running the script, make sure you have:
 
 * macOS
 * Java installed
-* `bundle-signer.jar`
+* [bundlesigner.jar](https://github.com/cafebazaar/bundle-signer)
 * An Android App Bundle (`.aab`)
 * A keystore file (`.jks` or `.keystore`)
 
