@@ -26,14 +26,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Script
 
 ```powershell
-if ((Get-Module -ListAvailable -Name CredentialManager)) {
-    ErrorMsg "CredentialManager module is not installed."
-    Info "Install it using:"
-    Info "Install-Module CredentialManager -Scope CurrentUser"
-    pause
-    exit
-}
-
 Add-Type -AssemblyName System.Windows.Forms
 Import-Module CredentialManager -ErrorAction SilentlyContinue
 
