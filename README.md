@@ -9,7 +9,7 @@ This repository provides a simple tool that automates signing an `.aab` file and
 This repository provides instructions for:
 
 - [macOS](./macOS/README.md)
-- Windows
+- Windows(./windows/README.md)
 
 ## What this repository teaches
 

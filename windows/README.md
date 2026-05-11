@@ -7,12 +7,10 @@ The script simplifies the process by guiding you through file selection, securel
 ## Requirements
 
 - Java installed
-- `bundlesigner.jar`
+- [bundlesigner.jar](https://github.com/cafebazaar/bundle-signer)
 - A valid Android keystore
 - PowerShell
 
-Download bundlesigner from:
-https://github.com/cafebazaar/bundle-signer
 
 ## Troubleshooting
 
