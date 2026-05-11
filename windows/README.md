@@ -7,7 +7,8 @@ This guide explains how to generate a `.bin` file from an Android App Bundle (`.
 - Java installed
 - [bundlesigner.jar](https://github.com/cafebazaar/bundle-signer)
 - A valid Android keystore
-- PowerShell
+- PowerShell 5+
+- CredentialManager PowerShell module
 
 ## Troubleshooting
 
@@ -16,6 +17,7 @@ This guide explains how to generate a `.bin` file from an Android App Bundle (`.
 On some Windows systems, PowerShell may prevent scripts from running due to the execution policy.
 
 If you see an error similar to:
+
 Allow local scripts for the current user
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
